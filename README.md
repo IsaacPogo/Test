@@ -3,6 +3,11 @@
 ## Descrição
 Projeto de testes automatizados usando Cypress para validar a API de criação de usuários.
 
+## Pré-requisitos
+- Node.js (versão 12 ou superior)
+- npm (gerenciador de pacotes do Node)
+- Cypress (instalado como dependência do projeto)
+
 ## Estrutura
 - `cypress/`: Testes automatizados e dados de teste.
   - `fixtures/createUser.json`: Dados de teste para criação de usuário.
