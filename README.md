@@ -14,16 +14,13 @@ Projeto de testes automatizados usando Cypress para validar a API de criação d
 
 ## Instalação
 Para instalar as dependências do projeto, execute o seguinte comando:
-```bash
-npm install
+ - `npm install`
 
 ## Uso
 Para iniciar o projeto, utilize o comando:
-```bash
-npm start
+ - `npm start`
 
 ## Rodar os testes
 Para rodar os testes automatizados com Cypress, utilize o comando:
-```bash
-npm run cypress
+ - `npm run cypress`
 
