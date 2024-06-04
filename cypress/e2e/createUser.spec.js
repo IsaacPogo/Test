@@ -22,7 +22,7 @@ context('Validar a API de criação de Usuários', () => {
         let body = createUserFixture.dadoInvalidoName
         cy.createUser(body).then((response) => {
             expect(response.status).to.equal(422)
-            console.log(response)
+            expect(response.body.message).to.equal("Name is a required field")
         })
 
     })
@@ -31,14 +31,13 @@ context('Validar a API de criação de Usuários', () => {
         let body = createUserFixture.dadoInvalidoJob
         cy.createUser(body).then((response) => {
             expect(response.status).to.equal(422)
-            console.log(response)
+            expect(response.body.message).to.equal("Job is a required field")
         })
     })
 
 
     it('Create User - Validar contrato da API', function () {
-        let body =  createUserFixture.dadosValidos
-    
+        let body =  createUserFixture.dadosValidos    
         cy.createUser(body).then((response) => {
             expect(response.status).to.equal(201)
             expect(response.body).to.be.jsonSchema(createUserSchema)
