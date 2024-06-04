@@ -1,0 +1,17 @@
+{
+  "dadosValidos": {
+    "name": "isaac neto",
+    "job": "QA"
+  },
+
+  "dadoInvalidoName": {
+    "name": "",
+    "job": "QA"
+  },
+
+  "dadoInvalidoJob": {
+    "name": "Isaac Neto",
+    "job": ""
+  }
+
+}
